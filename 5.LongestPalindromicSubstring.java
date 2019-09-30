@@ -1,3 +1,7 @@
+/*给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。*/
+//动态规划
+//dp[i][j]表示从i开始到j结束的子串为回文
+//dp[i][j]为回文则dp[i+1][j-1]为回文
 class Solution {
     public String longestPalindrome(String s) {
         boolean[][] dp = new boolean[s.length()][s.length()];
