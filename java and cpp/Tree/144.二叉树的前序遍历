@@ -1,0 +1,28 @@
+//非递归，栈实现。
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> res;
+        stack<TreeNode*> path;
+        TreeNode *temp=root;
+        while(temp!=NULL){
+            res.push_back(temp->val);
+            if(temp->right!=NULL){
+                path.push(temp->right);
+            }
+            temp=temp->left;
+        }
+        while(!path.empty()){
+            temp=path.top();
+            path.pop();
+            while(temp!=NULL){
+                res.push_back(temp->val);
+                if(temp->right!=NULL){
+                    path.push(temp->right);
+                }
+                temp=temp->left;
+            }
+        }
+        return res;
+    }
+};
