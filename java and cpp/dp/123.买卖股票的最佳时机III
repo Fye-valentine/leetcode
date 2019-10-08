@@ -1,0 +1,30 @@
+/*给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。
+
+设计一个算法来计算你所能获取的最大利润。你最多可以完成 两笔交易*/
+//两次动态规划
+class Solution {
+    public int maxProfit(int[] prices) {
+        int lirun[]=new int[2];
+        lirun[0]=0;
+        int max=0;
+        if(prices.length>0){
+            int min=prices[0];
+            for(int i=0; i<prices.length; i++){
+                lirun[0]=Math.max(lirun[0],prices[i]-min);
+                min=Math.min(min,prices[i]);
+                int min1;
+                lirun[1]=0;
+                if(i<prices.length-1){
+                    min1=prices[i+1];
+                    for(int j=i+1; j<prices.length; j++){
+                        lirun[1]=Math.max(lirun[1],prices[j]-min1);
+                        min1=Math.min(min1,prices[j]);
+                    }
+                }
+                if(max<lirun[0]+lirun[1]) 
+                    max=lirun[0]+lirun[1];
+            }
+        }
+        return max;
+    }
+}
