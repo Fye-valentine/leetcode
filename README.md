@@ -9,3 +9,5 @@
 [七、二分查找](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/二分查找)  
 [八、栈](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/栈)   
 [九、字符串](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/字符串)   
+[十、位运算](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/位运算)  
+[十一、广度优先搜索](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/广度优先搜索)   
