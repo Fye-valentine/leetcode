@@ -11,3 +11,4 @@
 [九、字符串](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/字符串)   
 [十、位运算](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/位运算)  
 [十一、广度优先搜索](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/广度优先搜索)   
+[十二、数学](https://github.com/Fye-valentine/leetcode/tree/master/java%20and%20cpp/数学)    
